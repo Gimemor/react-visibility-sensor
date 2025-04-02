@@ -348,10 +348,6 @@ export default class VisibilitySensor extends React.Component {
       return <div ref={this.node} />;
     }
 
-    console.warn(`[notice] passing children directly into the VisibilitySensor has been deprecated, and will be removed in the next major version.
-
-Please upgrade to the Child Function syntax instead: https://github.com/joshwnj/react-visibility-sensor#child-function-syntax`);
-
     return <div ref={this.node}>{children}</div>;
   }
 }
